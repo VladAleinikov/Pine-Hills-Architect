@@ -125,4 +125,113 @@ li {
 a {
   text-decoration: none;
 }
+
+.container {
+  max-width: 1270px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.header {
+  background: #26292E;
+  height: 140px;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: unset;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+}
+
+.header-container a {
+  color: #BEB8B1;
+  font-size: 0.9em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-container a:hover {
+  color: #936F49;
+}
+
+.header-container .header__nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 43px;
+}
+
+.header-container .header__nav .nav__list .nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.header-container .header__nav .nav__list .nav__item img {
+  width: 26px;
+  height: 26px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-container .header__nav .nav__list .nav__item:hover img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.header-container .header__languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+
+.header-container .header__languages .languages__item.active a {
+  color: #936F49;
+}
 /*# sourceMappingURL=main.css.map */

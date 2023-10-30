@@ -132,6 +132,16 @@ a {
   margin: auto;
 }
 
+h1 {
+  color: #fff;
+  font-size: 4em;
+  font-weight: 400;
+}
+
+h1 b {
+  color: #fff;
+}
+
 .header {
   background: #26292E;
   height: 140px;
@@ -233,5 +243,99 @@ a {
 
 .header-container .header__languages .languages__item.active a {
   color: #936F49;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../assets/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: unset;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  z-index: 10;
+}
+
+.hero-container .hero__title {
+  margin-bottom: 5px;
+}
+
+.hero-container .hero__subtitle {
+  margin-bottom: 120px;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 135%;
+}
+
+.hero-container .hero__links {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 20px;
+}
+
+.hero-container .hero__links .links__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.hero-container .hero__links .links__item a {
+  color: #fff;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hero-container .hero__links .links__item path {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hero-container .hero__links .links__item:hover a {
+  color: #936F49;
+}
+
+.hero-container .hero__links .links__item:hover path {
+  fill: #936F49;
 }
 /*# sourceMappingURL=main.css.map */

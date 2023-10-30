@@ -1,0 +1,23 @@
+.about {
+      margin-top: 112px;
+}
+.about-container {
+      @include flex($just: space-between);
+
+      .about__left {
+            @include flex(column, start, start);
+
+            h2{
+                  margin-bottom: 4px;
+
+                  &::after,
+                  &::before {
+                        content: '';
+                  }
+            }
+            .about__subtitle{
+                  color: $dark;
+                  margin-bottom: 50px;
+            }
+      }
+}

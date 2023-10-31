@@ -2,22 +2,43 @@
       margin-top: 112px;
 }
 .about-container {
-      @include flex($just: space-between);
+      @include flex($just: start);
 
       .about__left {
             @include flex(column, start, start);
+            margin-right: 180px;
 
-            h2{
+            h2 {
                   margin-bottom: 4px;
+                  width: 243px;
 
                   &::after,
                   &::before {
-                        content: '';
+                        content: "";
                   }
             }
-            .about__subtitle{
+            .about__subtitle {
                   color: $dark;
                   margin-bottom: 50px;
+                  white-space: nowrap;
             }
+            img {
+                  width: 348px;
+                  height: 302px;
+            }
+      }
+      .about__content{
+            @include flex(column, start, start);
+            max-width: 495px;
+            height: 520px;
+
+            .content__title{
+                  margin-bottom: 40px;
+            }
+            .content__text{
+                  margin-bottom: 110px;
+                  line-height: 175%; /* 35px */
+            }
+            
       }
 }

@@ -1,0 +1,15 @@
+.btn {
+      cursor: pointer;
+      width: 100%;
+      padding: 17px 0;
+      background: $accent;
+      text-align: center;
+      color: $white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      transition: .5s;
+
+      &:hover{
+            background: darken($color: $accent, $amount: 10);
+      }
+}

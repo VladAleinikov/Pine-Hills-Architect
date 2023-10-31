@@ -338,4 +338,38 @@ h4 {
 .about-container .about__content .content__text {
   margin-bottom: 110px;
   line-height: 175%; /* 35px */
+}
+
+.video {
+  background: #26292E;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
+  min-height: 563px;
+}
+.video-container .video__player {
+  display: block;
+  min-width: 756px;
+  min-height: 100%;
+}
+.video-container .video__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  min-width: calc(100% - 756px);
+  min-height: 100%;
+}
+.video-container .video__content .content__title,
+.video-container .video__content b,
+.video-container .video__content .content__text {
+  width: 400px;
+  color: #BEB8B1;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */

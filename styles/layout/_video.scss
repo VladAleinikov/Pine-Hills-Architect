@@ -1,0 +1,26 @@
+.video {
+      background: $dark;
+}
+.video-container {
+      @include flex();
+      min-height: 563px;
+
+      .video__player {
+            display: block;
+            min-width: 756px;
+            min-height: 100%;
+      }
+      .video__content {
+            @include flex(column, $gap: 15px);
+            min-width: calc(100% - 756px);
+            min-height: 100%;
+
+            .content__title,
+            b,
+            .content__text {
+                  width: 400px;
+                  color: $light-text;
+                  padding: 0;
+            }
+      }
+}

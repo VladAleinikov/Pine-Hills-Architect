@@ -1,0 +1,35 @@
+.help {
+      padding: 100px;
+      padding-top: 48px;
+      background-image: url("../assets/help-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.help-container {
+      @include flex($just: space-between);
+
+      .help-left {
+            @include flex(column, start, start);
+            max-width: 730px;
+
+            .help__subtitle {
+                  color: #c7c7c7;
+                  line-height: 175%; /* 63px */
+            }
+            .help__title {
+                  color: $white;
+            }
+      }
+      .help-right {
+            @include flex(column, start, start, 30px);
+            max-width: 375px;
+
+            .help__text {
+                  color: #c7c7c7;
+            }
+            .help__btn {
+                  padding: 10px 0;
+                  width: 317px;
+            }
+      }
+}

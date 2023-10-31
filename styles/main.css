@@ -421,4 +421,50 @@ h4 {
 }
 .services-container .services__list .services__item .item__text {
   line-height: 175%; /* 35px */
+}
+
+.help {
+  padding: 100px;
+  padding-top: 48px;
+  background-image: url("../assets/help-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.help-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: unset;
+}
+.help-container .help-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: unset;
+  max-width: 730px;
+}
+.help-container .help-left .help__subtitle {
+  color: #c7c7c7;
+  line-height: 175%; /* 63px */
+}
+.help-container .help-left .help__title {
+  color: #fff;
+}
+.help-container .help-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  max-width: 375px;
+}
+.help-container .help-right .help__text {
+  color: #c7c7c7;
+}
+.help-container .help-right .help__btn {
+  padding: 10px 0;
+  width: 317px;
 }/*# sourceMappingURL=main.css.map */

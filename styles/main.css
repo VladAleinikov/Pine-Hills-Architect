@@ -217,6 +217,17 @@ h5 {
   background: #715538;
 }
 
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #936F49;
+  color: #936F49;
+}
+
+.btn-outline:hover {
+  color: #fff;
+  background: #936F49;
+}
+
 .header {
   background: #26292E;
   height: 140px;
@@ -774,5 +785,166 @@ h5 {
   font-size: 0.8rem;
   line-height: 175%;
   /* 29.106px */
+}
+
+.benefits {
+  background: #26292E;
+  padding: 108px 100px 120px 140px;
+}
+
+.benefits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: unset;
+}
+
+.benefits-container .benefits__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: unset;
+  max-width: 420px;
+}
+
+.benefits-container .benefits__left .benefits__title {
+  margin-bottom: 4px;
+}
+
+.benefits-container .benefits__left .benefits__title,
+.benefits-container .benefits__left .benefits__title b {
+  color: #BEB8B1;
+}
+
+.benefits-container .benefits__left .benefits__title::after, .benefits-container .benefits__left .benefits__title::before {
+  content: "";
+}
+
+.benefits-container .benefits__left .benefits__subtitle {
+  margin-bottom: 56px;
+}
+
+.benefits-container .benefits__left .benefits__cubes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 170px;
+  margin-bottom: 70px;
+}
+
+.benefits-container .benefits__left .benefits__cubes .cubes__item {
+  width: 46.67px;
+  height: 46.67px;
+  background: #BEB8B1;
+}
+
+.benefits-container .benefits__left .benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: unset;
+}
+
+.benefits-container .benefits__left .benefits__list .benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.benefits-container .benefits__left .benefits__list .benefits__item h2,
+.benefits-container .benefits__left .benefits__list .benefits__item .item__subtitle {
+  text-align: center;
+  color: #BEB8B1;
+  padding: 0;
+}
+
+.benefits-container .benefits__left .benefits__list .benefits__item .item__subtitle {
+  font-size: 0.8rem;
+}
+
+.benefits-container .benefits__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: unset;
+  max-width: 478px;
+}
+
+.benefits-container .benefits__content h4 {
+  color: #BEB8B1;
+  margin-bottom: 40px;
+}
+
+.benefits-container .benefits__content p {
+  margin-bottom: 45px;
+  line-height: 175%;
+}
+
+.benefits-container .benefits__content .content__btn {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */

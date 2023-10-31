@@ -1,0 +1,72 @@
+.benefits {
+      background: $dark;
+      padding: 108px 100px 120px 140px;
+}
+.benefits-container {
+      @include flex($just: space-between);
+
+      .benefits__left {
+            @include flex(column, start, start);
+            max-width: 420px;
+
+            .benefits__title {
+                  margin-bottom: 4px;
+
+                  &,
+                  & b {
+                        color: $light-text;
+                  }
+                  &::after,
+                  &::before {
+                        content: "";
+                  }
+            }
+            .benefits__subtitle {
+                  margin-bottom: 56px;
+            }
+            .benefits__cubes {
+                  @include flex($gap: 15px);
+                  flex-wrap: wrap;
+                  max-width: 170px;
+                  margin-bottom: 70px;
+
+                  .cubes__item {
+                        width: 46.67px;
+                        height: 46.67px;
+                        background: $light-text;
+                  }
+            }
+            .benefits__list {
+                  @include flex($just: space-between);
+
+                  .benefits__item {
+                        @include flex(column, $gap: 10px);
+                        h2,
+                        .item__subtitle {
+                              text-align: center;
+                              color: $light-text;
+                              padding: 0;
+                        }
+                        .item__subtitle{
+                              font-size: 0.8rem;
+                        }
+                  }
+            }
+      }
+      .benefits__content{
+            @include flex(column, start, start);
+            max-width: 478px;
+
+            h4{
+                  color: $light-text;
+                  margin-bottom: 40px;
+            }
+            p{
+                  margin-bottom: 45px;
+                  line-height: 175%;
+            }
+            .content__btn{
+                  margin-top: 30px;
+            }
+      }
+}

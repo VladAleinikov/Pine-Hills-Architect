@@ -173,6 +173,13 @@ h4 {
   line-height: 147.5%; /* 38.35px */
 }
 
+h5 {
+  color: #26292E;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 175%; /* 38.808px */
+}
+
 .btn {
   cursor: pointer;
   width: 100%;
@@ -467,4 +474,42 @@ h4 {
 .help-container .help-right .help__btn {
   padding: 10px 0;
   width: 317px;
+}
+
+.projects-container {
+  padding: 107px 170px 150px 140px;
+}
+.projects-container .projects__title {
+  margin-bottom: 4px;
+}
+.projects-container .projects__title:after, .projects-container .projects__title::before {
+  content: "";
+}
+.projects-container .projects__subtitle {
+  margin-bottom: 92px;
+}
+.projects-container .projects__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: unset;
+  flex-wrap: wrap;
+}
+.projects-container .projects__list .project__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
+  width: 335px;
+  margin-bottom: 40px;
+}
+.projects-container .projects__list .project__item .item__img {
+  margin-bottom: 20px;
+}
+.projects-container .projects__list .project__item .item__subtitle {
+  color: #26292E;
+  font-size: 0.8rem;
+  line-height: 175%; /* 29.106px */
 }/*# sourceMappingURL=main.css.map */

@@ -1,12 +1,9 @@
-.about {
-      margin-top: 112px;
-}
 .about-container {
-      @include flex($just: start);
+      @include flex($just: space-between);
+      padding: 112px 235px 95px 140px;
 
       .about__left {
             @include flex(column, start, start);
-            margin-right: 180px;
 
             h2 {
                   margin-bottom: 4px;

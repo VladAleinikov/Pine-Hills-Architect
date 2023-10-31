@@ -4,8 +4,7 @@
 }
 .header-container {
       @include flex($just: space-between);
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding: 40px 76px 40px 100px;
       height: 100%;
 
       a {

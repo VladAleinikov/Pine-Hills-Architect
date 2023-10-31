@@ -6,8 +6,7 @@
 }
 .hero-container {
       @include flex(column, start, start);
-      padding-top: 120px;
-      padding-bottom: 80px;
+      padding: 120px 74px 80px 100px;
       z-index: 10;
 
       .hero__title {

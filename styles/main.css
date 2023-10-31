@@ -117,7 +117,7 @@ a {
 }
 
 .container {
-  max-width: 1270px;
+  max-width: 1400px;
   padding: 0 20px;
   margin: auto;
 }
@@ -193,8 +193,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   gap: unset;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 76px 40px 100px;
   height: 100%;
 }
 .header-container a {
@@ -251,8 +250,7 @@ h4 {
   justify-content: start;
   align-items: start;
   gap: unset;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding: 120px 74px 80px 100px;
   z-index: 10;
 }
 .hero-container .hero__title {
@@ -294,16 +292,13 @@ h4 {
   fill: #936F49;
 }
 
-.about {
-  margin-top: 112px;
-}
-
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   gap: unset;
+  padding: 112px 235px 95px 140px;
 }
 .about-container .about__left {
   display: flex;
@@ -311,7 +306,6 @@ h4 {
   justify-content: start;
   align-items: start;
   gap: unset;
-  margin-right: 180px;
 }
 .about-container .about__left h2 {
   margin-bottom: 4px;

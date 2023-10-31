@@ -1071,4 +1071,159 @@ h5 {
 .team-container .team__list .team__employee .employee__name {
   margin-top: 18px;
 }
+
+.footer {
+  background: #26292E;
+  padding: 87px 130px 54px 140px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: unset;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-container .footer__title {
+  margin-bottom: 84px;
+  margin-right: calc(100% - 315px);
+}
+
+.footer-container .footer__title b {
+  color: #fff;
+}
+
+.footer-container .footer__title::after, .footer-container .footer__title::before {
+  content: "";
+}
+
+.footer-container .footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: unset;
+  width: 100%;
+}
+
+.footer-container .footer__contacts .contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: unset;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 584px;
+}
+
+.footer-container .footer__contacts .contacts__item .item__title {
+  color: #936F49;
+  font-weight: 400;
+  margin-bottom: 45px;
+  line-height: normal;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 12px;
+  margin-bottom: 67px;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content .content__title {
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content p,
+.footer-container .footer__contacts .contacts__item .item__content a {
+  color: #BEB8B1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content .contacts__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content .contacts__social path {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content a:hover {
+  color: #936F49;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content a:hover path {
+  fill: #936F49;
+}
+
+.footer-container .footer__contacts .contacts__item .item__content .content__offer {
+  color: #936F49;
+}
+
+.footer-container .footer__contacts .contacts__item:first-child .content__title {
+  margin-bottom: 12px;
+}
+
+.footer-container .footer__contacts .contacts__item:last-child .item__content:last-child {
+  margin-top: 75px;
+  margin-left: 72px;
+}
 /*# sourceMappingURL=main.css.map */

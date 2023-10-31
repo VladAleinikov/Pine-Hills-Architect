@@ -1,0 +1,75 @@
+.footer {
+      background: $dark;
+      padding: 87px 130px 54px 140px;
+}
+.footer-container {
+      @include flex($just: space-between);
+      flex-wrap: wrap;
+
+      .footer__title {
+            margin-bottom: 84px;
+            margin-right: calc(100% - 315px);
+
+            b {
+                  color: $white;
+            }
+            &::after,
+            &::before {
+                  content: "";
+            }
+      }
+      .footer__contacts {
+            @include flex(row, space-between, start);
+            width: 100%;
+
+            .contacts__item {
+                  @include flex(column, start, start);
+                  flex-wrap: wrap;
+                  max-height: 584px;
+
+                  .item__title {
+                        color: $accent;
+                        font-weight: 400;
+                        margin-bottom: 45px;
+                        line-height: normal;
+                  }
+                  .item__content {
+                        @include flex(column, start, start, 12px);
+                        margin-bottom: 67px;
+
+                        .content__title {
+                              color: $white;
+                              font-weight: 400;
+                        }
+                        p,
+                        a {
+                              color: $light-text;
+                              transition: 0.5s;
+                        }
+                        .contacts__social {
+                              @include flex($gap: 13px);
+
+                              path {
+                                    transition: 0.5s;
+                              }
+                        }
+                        a:hover {
+                              color: $accent;
+                              path {
+                                    fill: $accent;
+                              }
+                        }
+                        .content__offer {
+                              color: $accent;
+                        }
+                  }
+                  &:first-child .content__title {
+                        margin-bottom: 12px;
+                  }
+                  &:last-child .item__content:last-child {
+                        margin-top: 75px;
+                        margin-left: 72px;
+                  }
+            }
+      }
+}

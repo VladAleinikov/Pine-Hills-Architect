@@ -1,0 +1,64 @@
+.team {
+      padding: 104px 145px 100px 100px;
+}
+.team-container {
+      @include flex(row, start, start, 40px);
+      flex-wrap: wrap;
+
+      .team__title {
+            width: 100%;
+            margin-right: calc(100% - 207px);
+            margin-bottom: 46px;
+
+            &::after,
+            &::before {
+                  content: "";
+            }
+      }
+      .team__director-img {
+            width: 559px;
+            height: 717px;
+
+            img {
+                  scale: 1.22;
+            }
+      }
+      .team__director {
+            margin-top: 20px;
+            @include flex(column, start, start, 25px);
+            max-width: 534px;
+
+            .director__post {
+                  color: $accent;
+                  font-size: 0.8rem;
+                  font-weight: 700;
+                  line-height: 175%; /* 28px */
+            }
+            .director__text {
+                  color: $dark;
+                  font-size: 1.2rem;
+                  line-height: 175%;
+            }
+      }
+      .team__list {
+            @include flex($just: space-between);
+            width: 100%;
+
+            .team__employee {
+                  @include flex(column);
+
+                  .employee__img {
+                        width: 255px;
+                        height: 340px;
+                        overflow: hidden;
+
+                        img {
+                              scale: 1.22;
+                        }
+                  }
+                  .employee__name{
+                        margin-top: 18px;
+                  }
+            }
+      }
+}

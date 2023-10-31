@@ -160,6 +160,12 @@ h2::after {
   background: #936F49;
 }
 
+h3 {
+  color: #26292e;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
 h4 {
   color: #26292E;
   font-size: 1.3rem;
@@ -372,4 +378,47 @@ h4 {
   width: 400px;
   color: #BEB8B1;
   padding: 0;
+}
+
+.services-container {
+  padding: 70px 170px 124px 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 94px;
+}
+.services-container h2::after, .services-container h2::before {
+  content: "";
+}
+.services-container .services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: unset;
+  flex-wrap: wrap;
+}
+.services-container .services__list .services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  width: 495px;
+  margin-bottom: 90px;
+}
+.services-container .services__list .services__item .item__img {
+  width: 100px;
+  height: 100px;
+  margin-left: -16px;
+}
+.services-container .services__list .services__item .item__subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 20px;
+}
+.services-container .services__list .services__item .item__text {
+  line-height: 175%; /* 35px */
 }/*# sourceMappingURL=main.css.map */

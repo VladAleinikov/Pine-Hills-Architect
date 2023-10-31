@@ -1,0 +1,36 @@
+.services-container {
+      padding: 70px 170px 124px 122px;
+      @include flex(column, start, start, 94px);
+
+      h2 {
+            &::after,
+            &::before {
+                  content: "";
+            }
+      }
+      .services__list {
+            @include flex(row, space-between, start);
+            flex-wrap: wrap;
+            
+            .services__item {
+                  @include flex(column, start, start, 10px);
+                  width: 495px;
+                  margin-bottom: 90px;
+
+                  .item__img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: -16px;
+                  }
+                  .item__subtitle {
+                        font-size: 0.8rem;
+                        text-transform: uppercase;
+                        letter-spacing: 3.5px;
+                        margin-bottom: 20px;
+                  }
+                  .item__text{
+                        line-height: 175%; /* 35px */
+                  }
+            }
+      }
+}

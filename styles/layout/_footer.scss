@@ -66,9 +66,13 @@
                   &:first-child .content__title {
                         margin-bottom: 12px;
                   }
-                  &:last-child .item__content:last-child {
-                        margin-top: 75px;
-                        margin-left: 72px;
+                  &:last-child {
+                        width: 460px;
+                        
+                        .item__content:last-child {
+                              margin-top: 75px;
+                              margin-left: 72px;
+                        }
                   }
             }
       }

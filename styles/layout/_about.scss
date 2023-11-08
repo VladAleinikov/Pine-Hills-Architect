@@ -22,20 +22,46 @@
             img {
                   width: 348px;
                   height: 302px;
+                  transition: 2s;
+
+                  &.element-hide {
+                        opacity: 0;
+                        transform: rotate(-90deg);
+                  }
             }
       }
-      .about__content{
+      .about__content {
             @include flex(column, start, start);
             max-width: 495px;
             height: 520px;
 
-            .content__title{
+            .content__title {
                   margin-bottom: 40px;
+                  transform: translateY(0px);
+                  transition: 1s;
+
+                  &.element-hide {
+                        opacity: 0;
+                        transform: translateY(-80px);
+                  }
             }
-            .content__text{
+            .content__text {
                   margin-bottom: 110px;
                   line-height: 175%; /* 35px */
+                  transform: translateY(0px);
+                  transition: 1s 0.5s;
+
+                  &.element-hide {
+                        opacity: 0;
+                        transform: translateX(40px);
+                  }
             }
-            
+            .content__btn {
+                  transition: 1s 1s;
+
+                  &.element-hide {
+                        opacity: 0;
+                  }
+            }
       }
 }

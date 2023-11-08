@@ -11,7 +11,13 @@
       .help-left {
             @include flex(column, start, start);
             max-width: 730px;
+            transform: translateX(0px);
+            transition: 1s;
 
+            &.element-hide {
+                  opacity: 0;
+                  transform: translateX(-50px);
+            }
             .help__subtitle {
                   color: #c7c7c7;
                   line-height: 175%; /* 63px */
@@ -23,7 +29,13 @@
       .help-right {
             @include flex(column, start, start, 30px);
             max-width: 375px;
+            transform: translateX(0px);
+            transition: 1s 0.5s;
 
+            &.element-hide {
+                  opacity: 0;
+                  transform: translateX(50px);
+            }
             .help__text {
                   color: #c7c7c7;
             }

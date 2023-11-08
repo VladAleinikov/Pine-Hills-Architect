@@ -25,6 +25,7 @@ h2 {
             width: 65%;
             height: 5px;
             background: $accent;
+            transition: 1s;
       }
       &::after {
             position: absolute;
@@ -33,6 +34,17 @@ h2 {
             width: 65%;
             height: 5px;
             background: $accent;
+            transition: 1s;
+      }
+      &.element-hide {
+            &::before {
+                  opacity: 0;
+                  left: -50%;
+            }
+            &::after {
+                  opacity: 0;
+                  right: -50%;
+            }
       }
 }
 h3 {

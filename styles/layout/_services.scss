@@ -16,7 +16,16 @@
                   @include flex(column, start, start, 10px);
                   width: 495px;
                   margin-bottom: 90px;
+                        transform: translateY(0px);
+                  transition: 1s;
 
+                  &:nth-child(2n){
+                        transition: 1s .5s;
+                  }
+                  &.element-hide{
+                        opacity: 0;
+                        transform: translateY(-20px);
+                  }
                   .item__img {
                         width: 100px;
                         height: 100px;

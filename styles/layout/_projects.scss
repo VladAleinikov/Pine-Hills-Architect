@@ -21,7 +21,21 @@
                   width: 335px;
                   margin-bottom: 40px;
                   overflow: hidden;
+                  transform: translateY(0px);
+                  transition: 1s;
 
+                  &:nth-child(2),
+                  &:nth-child(5) {
+                        transition: 1s 0.5s;
+                  }
+                  &:nth-child(3),
+                  &:nth-child(6) {
+                        transition: 1s 1s;
+                  }
+                  &.element-hide {
+                        opacity: 0;
+                        transform: translateY(-40px);
+                  }
                   .item__img {
                         margin-bottom: 20px;
                         scale: 1.22;
